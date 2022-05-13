@@ -1,0 +1,236 @@
+*{ padding:0; margin:0; box-sizing: border-box; font-family: sans-serif; }
+* {
+	box-sizing: border-box;
+	text-transform: capitalize;
+  }
+  body {
+	/*background: url(https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80); */
+	background: url(./assets/store_image.png);
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -1; 
+}
+  
+ 
+  form.example input[type=text] {
+	padding: 10px;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-radius: 80px;
+	margin-top: 12px;
+	float: left;
+	width: 60%;
+	background: #f1f1f1;
+  }
+  
+
+  form.example button {
+	float: left;
+	width: 25%;
+	padding: 10px;
+	background:black;
+	margin-top: 12px;
+	color: white;
+	font-size: 17px;
+	border: 1px solid grey;
+	border-radius: 80px;
+	border-left: none; 
+	cursor: pointer;
+  }
+  
+  form.example :hover {
+	background: #0b7dda;
+  }
+  
+
+  form.example::after {
+	content: "";
+	clear: both;
+	display: table;
+  }
+header{
+	width: 100%;
+	height: 100vh;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+nav{
+	width: 100%;
+	height: 70px;
+	border-bottom: 1px solid rgba(238, 150, 144, 0.904);
+	box-shadow: 2px 0px 5px rgba(201, 70, 31, 0.966);
+	display: flex ;
+	justify-content: space-around;
+	align-items: center;
+	position: sticky;
+	top:0;
+	z-index: 1;
+	background: rgba(238, 150, 144, 0.904);
+}
+.logo{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+	font-size: 50px;
+	font-weight: bold;
+}
+
+.menu a{
+	text-decoration: none;
+	font-size: 20px;
+	color: rgb(0, 0, 0);
+	padding: 10px 20px;
+	margin:5px;
+	font-weight: bold;
+}
+.menu a:nth-last-child(2){
+	background: rgb(0, 0, 0);
+	color: white;
+	border-radius: 80px;
+}
+.menu a:last-child{
+	background: rgb(0, 0, 0);
+	color: white;
+	border-radius: 80px;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transform-style: preserve-3d;
+	transform-origin: center;
+	perspective: 200px;
+	background:url("F:\photo-1528909257635-429e04fab8d4.jfif") 10% 10%;
+	background-attachment: fixed;
+}
+
+.left{
+	flex-basis: 50%;
+	animation: animate 5s linear infinite;
+}
+.left img{
+	width: 100%;
+	padding-top: 100px;
+}
+
+.right{
+	flex-basis: 50%;
+	max-width: 400px;
+	margin-left: 100px;
+}
+
+.right h1{
+	font-size: 50px;
+}
+.right p{
+	font-size: 25px;
+	margin:20px 0px;
+}
+.container a{
+	background: rgb(0, 0, 0);
+	color: white;
+	font-weight: bold;
+	font-size: xx-large;
+	border: none;
+	outline: none;
+	padding: 50px 90px;
+	text-decoration: none;
+	border-radius: 80px;
+	margin-bottom: 20px;
+}
+
+#featured{
+	padding: 50px 0px;
+	font-size: 30px;
+	text-align: center;
+
+}
+
+
+.wrapper{
+	display: grid;
+	grid-template-columns: repeat(4,20%);
+	grid-auto-rows: minmax(200px,auto);
+	grid-gap: 1em;
+	justify-content: center;
+	margin-top:10px;
+	align-items: center;
+}
+.wrapper>div{
+	border:1px solid rgb(0, 0, 0);
+	position: relative;
+	overflow: hidden;
+}
+.wrapper> div img{
+	width: 100%;
+	
+}
+
+.box1{
+	grid-row: 1/3;
+	grid-column: 1/3;
+}
+
+.price{
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: black;
+	color: white;
+	font-size: 20px;
+
+}
+
+
+#man{
+	padding: 80px 0px;
+}
+
+.man-row{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.man-box{
+	flex-basis: 17%;
+	box-shadow: 2px 3px 5px grey;
+	background: rgb(255, 255, 255);
+	padding: 10px;
+	text-align: center;
+}
+
+.man-box img{
+	width: 100%;
+}
+.man-box h2{
+	margin:20px 0px;
+}
+.man-box h3{
+	background: black;
+	color: white;
+	padding: 10px;
+}
+.man-box h3 a{
+	color: rgb(255, 255, 255);
+	background: black;
+	text-decoration: none;
+}
+.man-box:hover{
+	transform: translateY(-20px);
+	transition: 0.4s ease;
+}
+#women{
+	padding: 100px 0px;
+}
+#footer{
+	display: flex;
+	justify-content: space-around;
+	font-weight: bold;
+	font-size: xx-large;
+	align-items: center;
+	background: black;
+	color: white;
+	padding: 10px;
+}
