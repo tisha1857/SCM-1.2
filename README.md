@@ -1,4 +1,5 @@
 # SCM-1.2
-Made by Tisha
+For SCM project
+By Tisha
 2110991857
 G25
